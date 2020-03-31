@@ -60,7 +60,7 @@
       border-radius: 0;
       padding: 0;
     }
-    .button #cancel, .unified_container .row .panel-default #api .intro {
+    .buttons #cancel, .unified_container .row .panel-default #api .intro {
       display: none;
     }
     .unified_container .row .panel-default #api .localAccount .entry .entry-item input, #attributeList ul li input {
@@ -68,12 +68,23 @@
       border-radius: 8px;
       width: 100%;
     }
+    .attrEntry {
+      text-align: left;
+    }
+    .verificationInfoText {
+      color: white;
+    }
     .buttons #continue:disabled {
       border-radius: 8px;
       width: 100%;
       height: 48px;
     }
-    .unified_container .row .panel-default #api .localAccount .entry .buttons button, .unified_container .row .panel-default #api .localAccount .entry .buttons button:hover, .unified_container .row .panel-default #api .localAccount .entry .buttons button:active, .buttons #continue, #attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send] {
+    .unified_container .row .panel-default #api .localAccount .entry .buttons button,
+    .unified_container .row .panel-default #api .localAccount .entry .buttons button:hover,
+    .unified_container .row .panel-default #api .localAccount .entry .buttons button:active,
+    .buttons #continue, #attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send],
+    #attributeList ul li .attrEntry .verify .verifyButton,
+    #attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_resend] {
       background-color: #58D6FF;
       box-shadow: none;
       font-weight: bold;
