@@ -21,86 +21,6 @@
             src: url(https://ivsapp.b2clogin.com/static/tenant/templates/fonts/segoeui_bold.WOFF);
             font-weight: bold;
         }
-        #AmazonExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/amazon.svg);
-        }
-        #AmazonExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/amazon.svg);
-        }
-        #FacebookExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/facebook.svg);
-        }
-        #FacebookExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/facebook.svg);
-        }
-        #GitHubExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/github.svg);
-        }
-        #GitHubExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/github.svg);
-        }
-        #AppleExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/apple.svg);
-        }
-        #AppleExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/apple.svg);
-        }
-        #GoogleExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/google.svg);
-        }
-        #GoogleExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/google.svg);
-        }
-        #LinkedInExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/linkedin.svg);
-        }
-        #LinkedInExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/linkedin.svg);
-        }
-        #MicrosoftAccountExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/microsoft.svg);
-        }
-        #MicrosoftAccountExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/microsoft.svg);
-        }
-        #QQExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/qq.svg);
-        }
-        #QQExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/qq.svg);
-        }
-        #TwitterExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/twitter.svg);
-        }
-        #TwitterExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/twitter.svg);
-        }
-        #WeChatExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/wechat.svg);
-        }
-        #WeChatExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/wechat.svg);
-        }
-        #WeiboExchange {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/weibo.svg);
-        }
-        #WeiboExchange:hover {
-          background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/weibo.svg);
-        }
-        .buttons #cancel:before {
-            content: url(https://ivsapp.b2clogin.com/static/tenant/templates/images/left-arrow.svg);
-        }
-    </style>
-    <style id="idpselector">
-        #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-            background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/colored/local.svg);
-        }
-        #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
-            background-image: url(https://ivsapp.b2clogin.com/static/tenant/templates/idp_logos/white/local.svg);
-        }
-    </style>
-
-    <style>
     html{background:0 0}
     body{font-family:Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;background-attachment:fixed;background-color:#fff;background-position:center;background-repeat:no-repeat;background-size:cover;text-align:left}p{margin:0}a:focus{outline:0}input,select{border:1px solid #fff}input[type=email]:focus,input[type=password]:focus,input[type=text]:focus,select:focus{border:1px solid rgba(41,110,198,.5)}
     img[data-tenant-branding-background=true]{width:100%;height:100%;object-fit:cover;z-index:0;position:fixed;left:0;overflow:hidden;top:0}.container{text-align:center;width:100%;display:table;height:100vh;padding:0}#api{margin:0 auto}.col-lg-6{max-width:470px;width:100%;float:none;display:inline-block;vertical-align:top;padding:0}.row{width:100%;margin:0;display:table-cell;vertical-align:middle}ul{padding:0}#simplemodal-container .simplemodal-data{padding:5px 8px;overflow:hidden;background-color:#fff;border-radius:3px;font-style:italic}
@@ -140,14 +60,18 @@
       border-radius: 0;
       padding: 0;
     }
-    .container.unified_container .row .panel.panel-default .panel-body {
-    }
-    .unified_container .row .panel-default #api .intro {
+    .button #cancel, .unified_container .row .panel-default #api .intro {
       display: none;
     }
     .unified_container .row .panel-default #api .localAccount .entry .entry-item input, #attributeList ul li input {
       box-shadow: none;
       border-radius: 8px;
+      width: 100%;
+    }
+    .buttons #continue:disabled {
+      border-radius: 8px;
+      width: 100%;
+      height: 48px;
     }
     .unified_container .row .panel-default #api .localAccount .entry .buttons button, .unified_container .row .panel-default #api .localAccount .entry .buttons button:hover, .unified_container .row .panel-default #api .localAccount .entry .buttons button:active, .buttons #continue, #attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send] {
       background-color: #58D6FF;
@@ -169,10 +93,8 @@
     </style>
 </head>
 <body>
-    
     <div class="container  unified_container ">
         <div class="row">
-
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div id="api">
